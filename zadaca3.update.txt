@@ -1,0 +1,134 @@
+<html>
+<head>
+
+<title>Zadaca2</title>
+
+</head>
+<style>
+header{
+	float: left;
+	text-align:center;
+	padding:10px;
+	background-color:orange;
+	width:100%;
+	height:80px;
+	}
+nav{
+	float: left;
+	background-color:#34a4eb;
+	width:250px;
+	height:470px;
+	margin-top:80px;	
+	color:black;
+	}
+
+body{
+	background-color:#e4edd5
+}	
+.tijelo{
+	float: left;
+	background-color: green;
+    width: 950;
+    height: 355px;
+	margin-left:75px;
+    margin-top: 80px;
+	text-align:center;
+	}
+.tablica{
+	margin-left:40px;
+	border: 2px solid gray;
+}
+.redci{
+	width: 50px;
+    height: 60px;
+    border-color: gray;
+    border-style: solid;
+    padding-left: 2px;
+
+}
+footer{
+	background-color: red;
+	float: left;
+    width: 950px;
+    height: 70px;
+    margin-left:75px;
+    margin-top: 45px;
+	text-align:center;
+	}	
+a{
+	text-decoration: none;
+	display:flex
+}
+@media only screen and (max-width: 800px) {
+  /* Dodajemo pravila za ekrane do 800px širine */
+  header {
+    width: 100%;
+    margin-left: 0;
+  }
+   nav {
+    width: 100%;
+    margin-left: 0;
+  }
+   .tijelo {
+    width: 100%;
+    margin-left: 0;
+  }
+   footer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tijelo {
+    margin-left: 0;
+    width: auto; 
+    margin-top: 20px;
+  }
+  
+  nav {
+    width: 100%;
+    max-width: none; 
+    height: auto;
+  }
+}
+	
+	
+
+  </style>
+<body>
+	<header>
+		<h2>FSRE</h2>
+		<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100054513158054&tbnid=XcLVqQnPDUaN4M&vet=12ahUKEwiahsvcrdqCAxUsn_0HHUtWC-cQMygAegQIARBQ..i&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Ffsre.mostar%2F&docid=y9XbPq6GR5748M&w=320&h=320&q=fsre%20logo&ved=2ahUKEwiahsvcrdqCAxUsn_0HHUtWC-cQMygAegQIARBQ" >
+	</header>
+	
+	<nav>
+		<a href="https://github.com/mata94/testZadaca/blob/main/zadaca2Test.txt">zadaca2</a>
+		<a href="https://github.com/mata94/testZadaca/blob/main/zadaca2Test.txt">zadaca3</a>
+	</nav>
+	
+	<div class="tijelo">
+			<table class="tablica">
+				<tr>
+					<td class="redci"><a href="https://eucenje.sum.ba/moodle/">SUMARUM</a></td>
+					<td class="redci"><a href="https://fsre.sum.ba/">FSRE</a></td>
+					<td class="redci"><a href="https://fsre.sum.ba/racunarstvo">RAČUNARSTVO</a></td>
+				</tr>
+			</table>
+			
+			<h3>Fakultet strojarstva,računarstva i elektrotehnike</h3>
+			<h5>Fakultet računarstva, strojarstva i elektrotehnike</br>
+			u Mostaru je visokoobrazovna institucija koja pruža</br> 
+			širok spektar akademskih programa iz područja informatike,</br> 
+			strojarstva i elektrotehnike. Smješten u gradu Mostaru,</br>
+			fakultet ima bogatu tradiciju u obrazovanju i </br>
+			pružanju znanja koje kombinira teoriju i praksu.</h5>
+	</div>
+	
+	<footer>
+		<p>Autor:Mateo Golemac</p>
+		<p>Email :<a href="mailto:mateo.golemac@fsre.sum.ba">mateo.golemac@fsre.sum.ba</a></p>
+	</footer>
+		
+</body>
+
+
+</html>
