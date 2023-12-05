@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+	var info1 = {
+	  firstName: "Marko",
+	  lastName: "Maric",
+	  age: 40,
+	  eyeColor: "black"
+	};
+	
+	var info2 = {
+	  firstName: "Ivo",
+	  lastName: "Ivic",
+	  age: 45,
+	  eyeColor: "blue"
+	};
+	
+	var info3 = {
+	  firstName: "Pero",
+	  lastName: "Peric",
+	  age: 25,
+	  eyeColor: "black"
+	};
+	
+	var info = [info1,info2,info3];
+	
+	for(var i = 0; i<info.length;i++)
+	{	
+		var obj = info[i];
+		for(var part in obj)
+		{
+			document.write(part+":" +obj[part]);
+			document.write("<br/>" );
+		}
+		document.write("<br/>" );
+	}
+		
+ </script>
+</body>
+</html>

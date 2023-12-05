@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+	
+	function test(arr)
+	{
+		var novoPolje = [];
+		for(var i=0;i<arr.length;i++)
+		{	
+			var element = arr[i];
+			k=false;
+			for(var j=0;j<element.length;j++)
+			{	var trenutnaVrijednost =  element[j]
+				if(trenutnaVrijednost == trenutnaVrijednost.toUpperCase() && element.length >= 5)
+				{	
+					k=true;
+					break;
+				}
+				
+			}
+			if(k)
+				{
+					novoPolje.push(element);
+				}
+			
+		}
+		return novoPolje;
+		
+	}
+	
+	
+	var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+	var rez = test(arr);
+	document.write(rez);
+	
+	
+ </script>
+</body>
+</html>

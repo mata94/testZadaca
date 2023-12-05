@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 
+	document.write("Brojevi:<br/>");	
+	for(var i=2;i<1000;i++)
+	{	
+		var k=true;
+		for(var j=2;j<i;j++)
+		{
+			if(i%j == 0  && i!= j){
+				k=false;
+				break;
+			}
+		}
+		
+		if(k)
+		{
+			document.write(i+"<br/>");
+			console.log(i);
+
+		}
+	}
+	
+	
+	
+ </script>
+</body>
+</html>

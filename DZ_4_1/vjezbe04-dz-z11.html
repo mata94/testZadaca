@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 
+	const tempDay = ['2023-11-29', -1, 0, -0.5, 0.5, 0, 1.2, 1.8, 2, 3, 4, 6, 9, 12, 7, 6, 6, 8, 5, 4, 2, 3, 2, 1, 0];
+	
+	function test(arr) {
+			var min =0;
+			var max =0;
+			var datum = arr[0]; 
+		
+		for (var i = 1; i < arr.length; i++) {
+			var pom = arr[i];
+			
+			if (pom < min) {
+				min = pom;
+			}
+			
+			if (pom > max) {
+				max = pom;
+			}
+		}
+		
+		
+		document.write("min temp:"+min+"<br/>");
+		document.write("max temp:" +max+"<br/>");
+		document.write("datum:"+datum+"<br/>");
+		
+	}
+
+
+test(tempDay);
+
+ </script>
+</body>
+</html>

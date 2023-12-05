@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+	
+function test(broj1, broj2) {
+  for (var i = 0; i < 5; i++) {
+    var broj = Math.floor(Math.random() * (broj2-broj1 + 1)+broj1);
+	document.write(broj+"<br/>");
+  }
+}
+
+test(20,10);
+	
+ </script>
+</body>
+</html>
