@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ZADATAK 4</title>
+</head>
+<body>
+
+	<input type="number" id="unos">
+	<button onclick="ispis()" >pritisni</button>
+
+	<p id="paragraf"></p>		
+
+	<script>
+	function ispis(){
+		let ocjena = document.getElementById("unos").value;
+		let p = document.getElementById("paragraf").innerText;
+		
+
+		
+		if(ocjena==5)
+		{
+			document.getElementById("paragraf").innerText = "odlican";
+		}
+		else if(ocjena==4)
+		{
+			document.getElementById("paragraf").innerText = "vrlo dobar";
+		}
+		else if(ocjena==3)
+		{
+			document.getElementById("paragraf").innerText = "dobar";
+		}
+		else if(ocjena==2)
+		{
+			document.getElementById("paragraf").innerText = "dovoljan";
+		}
+		else if(ocjena==1)
+		{
+			document.getElementById("paragraf").innerText = "nedovoljan";
+		}
+		else
+		{
+			document.getElementById("paragraf").innerText = "niste unjeli vrijednost od 1 do 5 pokuasjte ponovo";
+		}
+
+		document.getElementById("unos").value=null;
+		
+
+	}
+
+	</script>
+</body>
+</html>

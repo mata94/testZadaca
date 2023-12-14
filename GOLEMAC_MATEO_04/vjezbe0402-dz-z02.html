@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zadatak 2</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<button onclick="promjenaPozadine()">PROMJENI POZADINU</button>
+	<p id="paragraf"></p>
+
+	<script>
+	function promjenaPozadine(){
+		let body = document.querySelector("body");
+		let Hexbroj = "#"+ Math.floor(Math.random()*16777215).toString(16)
+
+		body.style.backgroundColor=Hexbroj;
+
+		document.getElementById("paragraf").innerText=Hexbroj;
+		
+	}
+	</script>
+</body>
+</html>

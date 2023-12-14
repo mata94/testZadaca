@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zadatak 1</title>
+</head>
+<body>
+
+	<p id="prvi"></p>
+	<p id="drugi"></p>
+	<script type="text/javascript">
+		let unos=prompt("unesite niz brojeva");
+		let brojevi = unos.split(',').map(Number);
+		let rezultat=0;
+		let geomrez=1;
+		
+
+		for(let broj in brojevi)
+		{
+			rezultat=rezultat + brojevi[broj];
+		}
+		let artimeticka = rezultat / brojevi.length;
+		document.getElementById("prvi").innerText=artimeticka;
+		
+
+
+		for(let broj in brojevi)
+		{
+				geomrez=geomrez*brojevi[broj];
+		}
+		let geomsredina=Math.pow(geomrez,1/brojevi.length);
+		document.getElementById("drugi").innerText=geomsredina;
+		
+	</script>
+
+</body>
+</html>

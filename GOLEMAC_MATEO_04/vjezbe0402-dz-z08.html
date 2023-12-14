@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ZADATAK 8</title>
+</head>
+<body>
+	X = <input type="number" id="ulaz1">
+	<br>
+	Y = <input type="number" id="ulaz2">
+
+	<br>
+	<button onclick="zbroji()">+</button>
+	<button onclick="oduzmi()">-</button>
+	<button onclick="pomnozi()">*</button>
+	<button onclick="podijeli()">/</button>
+	<br>
+	
+	<button onclick="sinus()">sin</button>
+	<button onclick="cosinus()">cos</button>
+	<button onclick="tangens()">tang</button>
+	<br>
+	<button onclick="logaritam()">log</button>
+	<button onclick="ln()">ln</button>
+	<br>
+	<button onclick="kvadriraj()">kvadr</button>
+	<button onclick="kubiraj()">kub</button>
+	<button onclick="potenciraj()">potenc</button>
+	<br>
+	
+	
+
+	<script>
+		function zbroji()
+		{
+			let num1 = document.getElementById("ulaz1").value;
+			let num2 = document.getElementById("ulaz2").value;
+
+			let rez=Number(num1)+Number(num2);
+
+			alert(rez);
+			
+		}
+		function oduzmi()
+		{
+			let num1 = document.getElementById("ulaz1").value;
+			let num2 = document.getElementById("ulaz2").value;
+
+			let rez=Number(num1)-Number(num2);
+
+			alert(rez);
+			
+		}
+		function pomnozi()
+		{
+			let num1 = document.getElementById("ulaz1").value;
+			let num2 = document.getElementById("ulaz2").value;
+
+			let rez=Number(num1)*Number(num2);
+
+			alert(rez);
+			
+		}
+		function podijeli()
+		{
+			let num1 = document.getElementById("ulaz1").value;
+			let num2 = document.getElementById("ulaz2").value;
+
+			let rez=Number(num1) / Number(num2);
+
+			alert(rez);
+			
+		}
+		function kosinus() {
+		    let num = document.getElementById("ulaz1").value;
+		    let rez = Math.cos(Number(num));
+		    alert(rez);
+	}
+
+
+		function sinus() {
+		    let num = document.getElementById("ulaz1").value;
+		    let rez = Math.sin(Number(num));
+		    alert(rez);
+		}
+
+		function tangens() {
+		    let num = document.getElementById("ulaz1").value;
+		    let rez = Math.tan(Number(num));
+		    alert(rez);
+		}
+
+	
+		function ln() {
+		    let num = document.getElementById("ulaz1").value;
+		    let rez = Math.log(Number(num));
+		    alert(rez);
+		}
+		function log10() {
+    		let num = document.getElementById("ulaz1").value;
+   			let rez = Math.log10(Number(num));
+    		alert(rez);
+    	}
+
+		function kvadriraj() {
+		    let num = document.getElementById("ulaz1").value;
+		    let rez = Math.pow(Number(num), 2);
+		    alert(rez);
+		}
+
+		
+		function kubiraj() {
+		    let num = document.getElementById("ulaz1").value;
+		    let rez = Math.pow(Number(num), 3);
+		    alert(rez);
+		}
+
+		
+		function potenciraj() {
+		    let num = document.getElementById("ulaz1").value;
+		    let eksponent = document.getElementById("ulaz2").value;
+		    let rez = Math.pow(Number(num), Number(eksponent));
+		    alert(rez);
+		}
+
+	</script>
+
+</body>
+</html>

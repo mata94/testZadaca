@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	UNESI DAN(1-31)<input type="number" id="dan">
+	<br>
+	UNESI MJESEC(1-12)<input type="number" id="mjesec">
+	<br>
+	UNESI GODINU(NPR.1970)<input type="number" id="godina">
+
+	<button onclick="izracunajDob()" id="dugme">Izracunaj</button>
+
+	<script>
+	 function izracunajDob() {
+            // Dohvati unesene vrijednosti
+            let danInput = document.getElementById('dan');
+            let mjesecInput = document.getElementById('mjesec');
+            let godinaInput = document.getElementById('godina');
+
+            // Pretvori unesene vrijednosti u Date objekt i godinu
+            let datumRodjenja = new Date(`${mjesecInput.value}/${danInput.value}/${godinaInput.value}`);
+            let godinaRodjenja = parseInt(godinaInput.value);
+
+            // Dohvati trenutnu godinu
+            let trenutnaGodina = new Date().getFullYear();
+
+            // Izračunaj dob
+            let dob = trenutnaGodina - godinaRodjenja;
+
+            // Ako još nije rođendan u ovoj godini, smanji dob za 1
+            if (datumRodjenja.getMonth() > new Date().getMonth() ||
+                (datumRodjenja.getMonth() === new Date().getMonth() && datumRodjenja.getDate() > new Date().getDate())) {
+                dob--;
+            }
+
+            // Ispisi dob u alert prozoru
+            alert(`Vaša dob je: ${dob} godina.`);
+        }
+    </script>
+</body>
+</html>

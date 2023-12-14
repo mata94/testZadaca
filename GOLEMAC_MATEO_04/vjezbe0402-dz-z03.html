@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ZADATAK 3</title>
+</head>
+<body>
+
+	<input type="number" id="unos">
+	<button onclick="ispis()" >pritisni</button>		
+
+	<script>
+	function ispis(){
+		let ocjena = document.getElementById("unos").value;
+
+		
+		if(ocjena==5)
+		{
+			alert("odlican");
+		}
+		else if(ocjena==4)
+		{
+			alert("vrlo dobar");
+		}
+		else if(ocjena==3)
+		{
+			alert("dobar");
+		}
+		else if(ocjena==2)
+		{
+			alert("dovoljan");
+		}
+		else if(ocjena==1)
+		{
+			alert("nedovoljan");
+		}
+
+		document.getElementById("unos").value=null;
+		
+
+	}
+
+	</script>
+</body>
+</html>

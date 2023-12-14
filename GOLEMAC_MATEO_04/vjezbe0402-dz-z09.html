@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zarulja</title>
+</head>
+<body>
+
+    <img id="prekidac" onclick="promijeniStanje()" src="off-removebg-preview.png">
+    <img id="sijalica" src="zarulja_off_2.png">
+
+    <script>
+        function promijeniStanje() {
+            let sijalica = document.getElementById("sijalica");
+            let prekidac = document.getElementById("prekidac");
+
+            if (sijalica.src.includes("off")) {
+                // Ako je sijalica isključena, uključi je
+                sijalica.src = "zarulja_on_2.png";
+                prekidac.src = "on-removebg-preview.png";
+            } else {
+                // Ako je sijalica uključena, isključi je
+                sijalica.src = "zarulja_off_2.png";
+                prekidac.src = "off-removebg-preview.png";
+            }
+        }
+    </script>
+</body>
+</html>
